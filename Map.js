@@ -45,7 +45,7 @@ class Map {
 
                     index = (p1 * 8) + (p2 * 4) + (p3 * 2) + p4;
 
-                    sprite("assets/" + (showGrid ? "grid_" : "") + index + ".png", x * this.tileSize, y * this.tileSize);
+                    sprite("assets/" + (showGrid ? "grid_" : "") + (showTex ? "tex_" : "") + index + ".png", x * this.tileSize, y * this.tileSize);
                     nbSprites++;
                 }
 

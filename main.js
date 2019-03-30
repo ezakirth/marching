@@ -3,6 +3,7 @@ var timer, player, map;
 
 var editMode = true;
 var showGrid = true;
+var showTex = false;
 
 window.onresize = function () {
     canvas = document.getElementById('canvas');
