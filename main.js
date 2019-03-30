@@ -31,10 +31,10 @@ function draw() {
     ctx.clearRect(0, 0, canvas.width, canvas.height);
 
     player.update();
-    if (!editMode) player.draw();
 
     map.draw();
 
+    if (!editMode) player.draw();
 }
 
 
