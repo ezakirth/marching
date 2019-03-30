@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="Timer.js"></script>
+    <script src="Sprite.js"></script>
+    <script src="Vector.js"></script>
+    <script src="Player.js"></script>
+    <script src="Map.js"></script>
+    <script src="input.js"></script>
+    <script src="main.js"></script>
+    <link rel="stylesheet" href="reset.css">
+</head>
+
+<body onload="setup()">
+    <canvas id="canvas"></canvas>
+    <div style="position:absolute; top: 10px; left: 10px; background-color:black;color:white; padding:10px;">
+        <div id="sprites"></div><br />
+        <div><label for="editMode" style="cursor:pointer;">Edit mode: </label><input style="cursor:pointer;"
+                id="editMode" type="checkbox" checked="checked" onchange="editMode=this.checked;this.blur();">
+        </div>
+        <div><label for="showGrid" style="cursor:pointer;">Show Grid: </label><input style="cursor:pointer;"
+                id="showGrid" type="checkbox" checked="checked" onchange="showGrid=this.checked;this.blur();">
+        </div>
+    </div>
+
+</body>
+
+</html>
